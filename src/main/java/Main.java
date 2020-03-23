@@ -1,14 +1,12 @@
 import java.io.Console;
 
 public class Main {
-  public static void main(String[] args) {
-    BonusService service = new BonusService();
+    public static void main(String[] args) {
 
-    long amount = 1000_60;
-    boolean registered = true;
+        BonusService service = new BonusService();
+        long bonus = service.calculate(100000, true);
+        System.out.println(bonus);
 
-     service.calculate(amount, registered);
-
-  }
+    }
 }
 
